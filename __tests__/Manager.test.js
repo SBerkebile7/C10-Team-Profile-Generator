@@ -14,10 +14,18 @@ test('check the managers info', () => {
     expect(manager.getInfo()).toHaveProperty('name');
     expect(manager.getInfo()).toHaveProperty('id');
     expect(manager.getInfo()).toHaveProperty('email');
+    expect(manager.getInfo()).toHaveProperty('office');
+    expect(manager.getInfo()).toHaveProperty('role');
 });
 
 test('check the managers role', () => {
     const manager = new Manager('Spencer');
 
     expect(manager.getRole()).toBe('Manager');
+});
+
+test('check the managers office number', () => {
+    const manager = new Manager('Spencer');
+
+    expect(manager.getOfficeNumber()).toEqual(expect.any(String));
 });
