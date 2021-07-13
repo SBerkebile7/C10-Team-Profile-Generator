@@ -11,7 +11,7 @@ A node.js file that allows users to build a website that showcases off their tea
 * Node
 
 ## Video Walkthrough
-[Click here to be guided to the video on YouTube](https://youtu.be/eZrawdD95ag)
+[Click here to be guided to the video on YouTube](https://youtu.be/VZIv2X-uZXE)
 
 ## GitHub Repository
 https://github.com/SBerkebile7/C10-Team-Profile-Generator
