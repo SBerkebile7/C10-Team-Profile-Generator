@@ -81,12 +81,13 @@ const continueTeamBuilder = () => {
     -------------------------------
     `);
 
-    inquirer.prompt({
+    return inquirer.prompt({
         type: 'confirm',
         name: 'addTeam',
         message: "Would you like to add more team members?",
         default: false
-    }).then(addTeam => {
+    }).then(continueBuild => {
+        const { addTeam } = continueBuild;
         if(addTeam) {
             return inquirer.prompt([
                 {
